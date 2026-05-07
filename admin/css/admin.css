@@ -1160,6 +1160,93 @@ pre.log {
   pointer-events: none;
 }
 
+/* === Foto-lightbox (admin/leads.php) === */
+body.lightbox-open { overflow: hidden; }
+.photo-lightbox {
+  position: fixed; inset: 0;
+  background: rgba(10, 10, 20, .92);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  animation: lb-fade .15s ease;
+}
+.photo-lightbox[hidden] { display: none; }
+@keyframes lb-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.photo-lightbox-figure {
+  position: relative;
+  margin: 0;
+  max-width: min(1200px, 100%);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.photo-lightbox-figure img {
+  max-width: 100%;
+  max-height: calc(100vh - 140px);
+  width: auto; height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.5);
+  background: #1a1a2a;
+  user-select: none;
+}
+.photo-lightbox-meta {
+  color: rgba(255,255,255,.85);
+  font-size: 13px;
+  display: flex; gap: 16px; align-items: center;
+}
+.photo-lightbox-meta a {
+  color: #c8b8ec;
+  text-decoration: none;
+}
+.photo-lightbox-meta a:hover { text-decoration: underline; }
+
+.photo-lightbox-close,
+.photo-lightbox-nav {
+  position: absolute;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: background .15s ease, transform .15s ease;
+  z-index: 10;
+}
+.photo-lightbox-close:hover {
+  background: rgba(255,255,255,.22);
+  transform: scale(1.05);
+}
+.photo-lightbox-close {
+  top: 16px; right: 20px;
+  width: 44px; height: 44px;
+  font-size: 28px; line-height: 1;
+}
+.photo-lightbox-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px; height: 56px;
+  font-size: 36px; line-height: 1;
+}
+.photo-lightbox-nav.prev { left: 20px; }
+.photo-lightbox-nav.next { right: 20px; }
+.photo-lightbox-nav:hover { background: rgba(255,255,255,.22); transform: translateY(-50%) scale(1.05); }
+.photo-lightbox-nav[hidden] { display: none; }
+
+@media (max-width: 640px) {
+  .photo-lightbox { padding: 16px; }
+  .photo-lightbox-close { top: 8px; right: 8px; width: 38px; height: 38px; font-size: 24px; }
+  .photo-lightbox-nav { width: 42px; height: 42px; font-size: 26px; }
+  .photo-lightbox-nav.prev { left: 6px; }
+  .photo-lightbox-nav.next { right: 6px; }
+}
+
 /* ============================================
    COLOR PICKER (theme editor)
    ============================================ */

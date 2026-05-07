@@ -904,4 +904,80 @@
   } catch (e) {
     if (window.console) console.warn('layout-picker init failed:', e);
   }
+
+  // ===========================================
+  // Foto-lightbox (admin/leads.php)
+  // ===========================================
+  (function initPhotoLightbox() {
+    const box     = document.getElementById('photoLightbox');
+    const img     = document.getElementById('photoLightboxImg');
+    const counter = document.getElementById('photoLightboxCounter');
+    const openBtn = document.getElementById('photoLightboxOpen');
+    const closeBtn= document.getElementById('photoLightboxClose');
+    const prevBtn = document.getElementById('photoLightboxPrev');
+    const nextBtn = document.getElementById('photoLightboxNext');
+    if (!box || !img) return;
+
+    let currentList = []; // array van anchors uit huidige lead
+    let currentIdx  = 0;
+
+    function show(idx) {
+      if (!currentList.length) return;
+      currentIdx = (idx + currentList.length) % currentList.length;
+      const a = currentList[currentIdx];
+      const url = a.getAttribute('href');
+      img.src = url;
+      img.alt = a.querySelector('img')?.alt || '';
+      openBtn.href = url;
+      counter.textContent = (currentIdx + 1) + ' / ' + currentList.length;
+      const single = currentList.length <= 1;
+      prevBtn.hidden = single;
+      nextBtn.hidden = single;
+    }
+
+    function open(list, idx) {
+      currentList = Array.from(list);
+      box.hidden = false;
+      box.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('lightbox-open');
+      show(idx);
+    }
+
+    function close() {
+      box.hidden = true;
+      box.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('lightbox-open');
+      img.src = '';
+      currentList = [];
+    }
+
+    // Click op een thumbnail → open lightbox met alle foto's uit DEZE lead-card
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest('.lead-photo');
+      if (!a) return;
+      const card = a.closest('.lead-card');
+      if (!card) return;
+      const list = card.querySelectorAll('.lead-photo');
+      const idx  = Array.from(list).indexOf(a);
+      e.preventDefault();
+      open(list, idx);
+    });
+
+    closeBtn.addEventListener('click', close);
+    prevBtn.addEventListener('click', () => show(currentIdx - 1));
+    nextBtn.addEventListener('click', () => show(currentIdx + 1));
+
+    // Klik op donker backdrop (niet op figure) → sluiten
+    box.addEventListener('click', (e) => {
+      if (e.target === box) close();
+    });
+
+    // Toetsenbord: ← → Esc
+    document.addEventListener('keydown', (e) => {
+      if (box.hidden) return;
+      if (e.key === 'Escape')      { e.preventDefault(); close(); }
+      else if (e.key === 'ArrowLeft')  { e.preventDefault(); show(currentIdx - 1); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); show(currentIdx + 1); }
+    });
+  })();
 })();

@@ -293,4 +293,18 @@ include __DIR__ . '/_layout_top.php';
   <?php endif; ?>
 </div>
 
+<!-- Foto-lightbox: dynamisch gevuld door admin.js -->
+<div class="photo-lightbox" id="photoLightbox" hidden aria-hidden="true" role="dialog" aria-label="Foto bekijken">
+  <button type="button" class="photo-lightbox-close" id="photoLightboxClose" aria-label="Sluiten (Esc)">&times;</button>
+  <button type="button" class="photo-lightbox-nav prev" id="photoLightboxPrev" aria-label="Vorige foto (←)">&lsaquo;</button>
+  <button type="button" class="photo-lightbox-nav next" id="photoLightboxNext" aria-label="Volgende foto (→)">&rsaquo;</button>
+  <figure class="photo-lightbox-figure" id="photoLightboxFigure">
+    <img id="photoLightboxImg" alt="" />
+    <figcaption class="photo-lightbox-meta">
+      <span id="photoLightboxCounter">1 / 1</span>
+      <a id="photoLightboxOpen" href="#" target="_blank" rel="noopener">Open origineel ↗</a>
+    </figcaption>
+  </figure>
+</div>
+
 <?php include __DIR__ . '/_layout_bottom.php'; ?>
