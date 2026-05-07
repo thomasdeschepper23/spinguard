@@ -95,6 +95,30 @@ require __DIR__ . '/inc/header.php';
     </div>
   </section>
 
+  <!-- ============ HOME GALLERY ============ -->
+  <?php $home_gallery = $sections['home_gallery'] ?? []; if (!empty($home_gallery['enabled']) && !empty($home_gallery['items'])): ?>
+  <section class="section section-gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><?= e($home_gallery['eyebrow'] ?? 'Ons werk in beeld') ?></span>
+        <h2 style="margin-top:16px;"><?= e($home_gallery['heading'] ?? 'Echt gedaan, echt resultaat.') ?></h2>
+        <p><?= e($home_gallery['intro'] ?? '') ?></p>
+      </div>
+      <div class="home-gallery reveal">
+        <?php foreach ($home_gallery['items'] as $i => $g):
+          $img = $g['image'] ?? ''; if ($img === '') continue;
+          $cap = $g['caption'] ?? '';
+        ?>
+          <figure class="home-gallery-item" style="--i: <?= (int)$i ?>;">
+            <img src="<?= e(b($img)) ?>" alt="<?= e($cap) ?>" loading="lazy" />
+            <?php if ($cap !== ''): ?><figcaption><?= e($cap) ?></figcaption><?php endif; ?>
+          </figure>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+  <?php endif; ?>
+
   <!-- ============ TRUST STRIP ============ -->
   <section class="trust-strip">
     <div class="container">

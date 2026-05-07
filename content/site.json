@@ -30,7 +30,9 @@
             "6 maanden garantie",
             "Reactie binnen 24 uur",
             "Biologisch afbreekbaar"
-        ]
+        ],
+        "image": "/assets/photos/sg-hero-woning.webp",
+        "image_alt": "Verzorgde Nederlandse woning behandeld door SpinGuard"
     },
     "trust_strip": [
         {
@@ -126,34 +128,125 @@
     "discount_note": "20% korting bij behandeling van 3 of meer panden tegelijk.",
     "sections": {
         "_comment": "Section-koppen / intros / CTA's per pagina. Allemaal editable via admin → tab 'Pagina-teksten'.",
-        "home_prices":         { "eyebrow": "Tarieven",            "heading": "Heldere prijzen per type pand.",                "intro": "Vaste prijzen vanaf €70 — geen verrassingen, alles inbegrepen." },
-        "home_process":        { "eyebrow": "Werkwijze",           "heading": "Onze aanpak in 5 stappen.",                     "intro": "Van eerste WhatsApp tot 6 maanden garantie — zo werken wij." },
-        "home_ba":             { "eyebrow": "Het verschil",        "heading": "Het verschil van één behandeling.",             "intro": "Schuif over de afbeelding om het verschil te zien — vóór en na onze behandeling." },
-        "home_benefits":       { "eyebrow": "Waarom SpinGuard",    "heading": "De standaard in spinvrij wonen.",               "intro": "Vier redenen waarom particulieren en bedrijven voor SpinGuard kiezen." },
-        "home_faq":            { "eyebrow": "Veelgestelde vragen", "heading": "Antwoorden op uw vragen.",                       "intro": "Niet gevonden wat u zoekt? Stuur ons een bericht via WhatsApp." },
-
-        "diensten_hero":       { "eyebrow": "Diensten & tarieven", "heading": "Heldere prijzen voor elk type pand.",           "intro": "Vaste prijzen vanaf €70, inclusief inspectie en zes maanden garantie. Vraag vrijblijvend een offerte aan." },
-        "diensten_benefits":   { "eyebrow": "Inbegrepen",          "heading": "Wat krijgt u voor uw geld?",                    "intro": "Bij elke behandeling — ongeacht het type pand — krijgt u dezelfde grondige aanpak." },
-
-        "werkwijze_hero":      { "eyebrow": "Werkwijze",           "heading": "Zo werken wij bij SpinGuard.",                  "intro": "Van eerste contact tot zes maanden garantie. Onze aanpak is helder, transparant en doelgericht." },
-        "werkwijze_timeline":  { "eyebrow": "Op de dag zelf",      "heading": "Wat te verwachten?",                            "intro": "Een typische behandelingsdag duurt ongeveer 1-2 uur voor een gemiddelde woning." },
-        "werkwijze_ba":        { "eyebrow": "Het verschil",        "heading": "Het verschil van één behandeling.",             "intro": "Schuif over de afbeelding om het verschil te zien — vóór en na onze behandeling." },
-
-        "contact_faq":         { "eyebrow": "Veelgestelde vragen", "heading": "Antwoorden op uw vragen.",                       "intro": "Niet gevonden wat u zoekt? Stuur ons een bericht via WhatsApp." }
+        "home_prices": {
+            "eyebrow": "Tarieven",
+            "heading": "Heldere prijzen per type pand.",
+            "intro": "Vaste prijzen vanaf €70 — geen verrassingen, alles inbegrepen."
+        },
+        "home_process": {
+            "eyebrow": "Werkwijze",
+            "heading": "Onze aanpak in 5 stappen.",
+            "intro": "Van eerste WhatsApp tot 6 maanden garantie — zo werken wij."
+        },
+        "home_ba": {
+            "eyebrow": "Het verschil",
+            "heading": "Het verschil van één behandeling.",
+            "intro": "Schuif over de afbeelding om het verschil te zien — vóór en na onze behandeling."
+        },
+        "home_benefits": {
+            "eyebrow": "Waarom SpinGuard",
+            "heading": "De standaard in spinvrij wonen.",
+            "intro": "Vier redenen waarom particulieren en bedrijven voor SpinGuard kiezen."
+        },
+        "home_faq": {
+            "eyebrow": "Veelgestelde vragen",
+            "heading": "Antwoorden op uw vragen.",
+            "intro": "Niet gevonden wat u zoekt? Stuur ons een bericht via WhatsApp."
+        },
+        "diensten_hero": {
+            "eyebrow": "Diensten & tarieven",
+            "heading": "Heldere prijzen voor elk type pand.",
+            "intro": "Vaste prijzen vanaf €70, inclusief inspectie en zes maanden garantie. Vraag vrijblijvend een offerte aan."
+        },
+        "diensten_benefits": {
+            "eyebrow": "Inbegrepen",
+            "heading": "Wat krijgt u voor uw geld?",
+            "intro": "Bij elke behandeling — ongeacht het type pand — krijgt u dezelfde grondige aanpak."
+        },
+        "werkwijze_hero": {
+            "eyebrow": "Werkwijze",
+            "heading": "Zo werken wij bij SpinGuard.",
+            "intro": "Van eerste contact tot zes maanden garantie. Onze aanpak is helder, transparant en doelgericht."
+        },
+        "werkwijze_timeline": {
+            "eyebrow": "Op de dag zelf",
+            "heading": "Wat te verwachten?",
+            "intro": "Een typische behandelingsdag duurt ongeveer 1-2 uur voor een gemiddelde woning."
+        },
+        "werkwijze_ba": {
+            "eyebrow": "Het verschil",
+            "heading": "Het verschil van één behandeling.",
+            "intro": "Schuif over de afbeelding om het verschil te zien — vóór en na onze behandeling."
+        },
+        "contact_faq": {
+            "eyebrow": "Veelgestelde vragen",
+            "heading": "Antwoorden op uw vragen.",
+            "intro": "Niet gevonden wat u zoekt? Stuur ons een bericht via WhatsApp."
+        },
+        "home_gallery": {
+            "enabled": true,
+            "eyebrow": "Ons werk in beeld",
+            "heading": "Echt gedaan, echt resultaat.",
+            "intro": "Een greep uit recent behandelde panden — van rijtjeshuis tot bedrijfspand.",
+            "items": [
+                {
+                    "image": "/assets/photos/sg-hero-woning.webp",
+                    "caption": "Volledige gevelbehandeling — Nijmegen"
+                },
+                {
+                    "image": "/assets/photos/sg-process.webp",
+                    "caption": "Reiniging dakgoten en kozijnen"
+                },
+                {
+                    "image": "/assets/photos/sg-bestrijding.webp",
+                    "caption": "Behandeling van schuilplaatsen"
+                },
+                {
+                    "image": "/assets/photos/sg-service-spin.webp",
+                    "caption": "Detail van de gevel-aanpak"
+                }
+            ]
+        }
     },
     "ctas": {
         "_comment": "CTA-banner onderaan elke pagina. title + text.",
-        "diensten":  { "title": "Klaar voor een spinvrije woning?", "text": "Stuur ons een paar foto's van uw pand via WhatsApp. Binnen 24 uur ontvangt u een vrijblijvende offerte op maat." },
-        "werkwijze": { "title": "Klaar om te starten?",            "text": "Stuur ons enkele foto's via WhatsApp. Binnen 24 uur ontvangt u een vrijblijvende offerte op maat." }
+        "diensten": {
+            "title": "Klaar voor een spinvrije woning?",
+            "text": "Stuur ons een paar foto's van uw pand via WhatsApp. Binnen 24 uur ontvangt u een vrijblijvende offerte op maat."
+        },
+        "werkwijze": {
+            "title": "Klaar om te starten?",
+            "text": "Stuur ons enkele foto's via WhatsApp. Binnen 24 uur ontvangt u een vrijblijvende offerte op maat."
+        }
     },
     "timeline": {
         "_comment": "Timeline-items op werkwijze-pagina (Op de dag zelf).",
         "items": [
-            { "time": "0:00", "title": "Aankomst & inspectie",           "text": "Wij arriveren met onze toolkit, lopen het pand rond en bespreken de aanpak met u." },
-            { "time": "0:15", "title": "Webben & nesten verwijderen",   "text": "Eerst alle bestaande webben en nesten weghalen — gevels, kozijnen, schuur, hoeken." },
-            { "time": "0:45", "title": "Behandeling kritieke plekken",   "text": "Gerichte behandeling met biologisch afbreekbare middelen op alle hot-spots." },
-            { "time": "1:15", "title": "Eindcontrole",                   "text": "Wij controleren of niets gemist is en doen een laatste rondje. Foto's voor in onze rapportage." },
-            { "time": "1:30", "title": "Afronding & uitleg",             "text": "Korte uitleg wat u kunt verwachten, garantie-info en u krijgt onze contactgegevens voor eventuele vragen." }
+            {
+                "time": "0:00",
+                "title": "Aankomst & inspectie",
+                "text": "Wij arriveren met onze toolkit, lopen het pand rond en bespreken de aanpak met u."
+            },
+            {
+                "time": "0:15",
+                "title": "Webben & nesten verwijderen",
+                "text": "Eerst alle bestaande webben en nesten weghalen — gevels, kozijnen, schuur, hoeken."
+            },
+            {
+                "time": "0:45",
+                "title": "Behandeling kritieke plekken",
+                "text": "Gerichte behandeling met biologisch afbreekbare middelen op alle hot-spots."
+            },
+            {
+                "time": "1:15",
+                "title": "Eindcontrole",
+                "text": "Wij controleren of niets gemist is en doen een laatste rondje. Foto's voor in onze rapportage."
+            },
+            {
+                "time": "1:30",
+                "title": "Afronding & uitleg",
+                "text": "Korte uitleg wat u kunt verwachten, garantie-info en u krijgt onze contactgegevens voor eventuele vragen."
+            }
         ]
     },
     "compare": {
@@ -165,12 +258,36 @@
         "col_them": "DIY / supermarkt",
         "col_us": "SpinGuard",
         "rows": [
-            { "label": "Verwijdering van webben & nesten",           "them": "no",   "us": "yes" },
-            { "label": "Behandeling op moeilijk bereikbare plekken", "them": "no",   "us": "yes" },
-            { "label": "Biologisch afbreekbare middelen",            "them": "soms", "us": "yes" },
-            { "label": "Werkzaam tot 6 maanden",                     "them": "no",   "us": "yes" },
-            { "label": "Garantie bij hernieuwde overlast",           "them": "no",   "us": "yes" },
-            { "label": "Inspectie ter plekke",                       "them": "no",   "us": "yes" }
+            {
+                "label": "Verwijdering van webben & nesten",
+                "them": "no",
+                "us": "yes"
+            },
+            {
+                "label": "Behandeling op moeilijk bereikbare plekken",
+                "them": "no",
+                "us": "yes"
+            },
+            {
+                "label": "Biologisch afbreekbare middelen",
+                "them": "soms",
+                "us": "yes"
+            },
+            {
+                "label": "Werkzaam tot 6 maanden",
+                "them": "no",
+                "us": "yes"
+            },
+            {
+                "label": "Garantie bij hernieuwde overlast",
+                "them": "no",
+                "us": "yes"
+            },
+            {
+                "label": "Inspectie ter plekke",
+                "them": "no",
+                "us": "yes"
+            }
         ]
     },
     "reviews_settings": {
@@ -269,7 +386,7 @@
         "title": "Direct zichtbaar resultaat.",
         "subtitle": "Schuif over de afbeelding om het verschil te zien — vóór en na onze behandeling.",
         "before_image": "",
-        "after_image": "",
+        "after_image": "/assets/photos/sg-process.webp",
         "bullets": [
             "Webben en nesten compleet verwijderd",
             "Schone gevel, kozijnen en hoeken",
@@ -278,22 +395,32 @@
     },
     "testimonials": [
         {
-            "quote": "Vanaf de eerste foto tot het eindresultaat alles netjes geregeld. Geen spinnen meer rond ons huis.",
-            "name": "Familie Jansen",
-            "loc": "Rijtjeshuis · Nijmegen",
-            "initials": "FJ"
-        },
-        {
-            "quote": "Snel, vriendelijk en professioneel. Onze parkeergarage is weer toonbaar — klanten reageren positief.",
+            "quote": "Vanaf de eerste foto tot het eindresultaat alles netjes geregeld. Onze parkeergarage is weer toonbaar, klanten reageren positief.",
             "name": "ADA Groep",
             "loc": "Bedrijfspand · Arnhem",
-            "initials": "AG"
+            "initials": "AG",
+            "rating": 5
         },
         {
-            "quote": "Eerlijke prijs, schone aanpak. We laten het nu jaarlijks doen. Scheelt veel ergernis.",
-            "name": "Marieke V.",
-            "loc": "Vrijstaande woning · Beuningen",
-            "initials": "MV"
+            "quote": "Onze tuin is in jaren niet zo spinvrij geweest. Heel professioneel en vriendelijk team.",
+            "name": "Albert",
+            "loc": "Vrijstaande woning",
+            "initials": "A",
+            "rating": 5
+        },
+        {
+            "quote": "Meerdere behandelingen gehad — werking blijft. Goede prijs-kwaliteit verhouding.",
+            "name": "Adriana",
+            "loc": "Rijtjeshuis",
+            "initials": "A",
+            "rating": 5
+        },
+        {
+            "quote": "Betrouwbaar bedrijf dat afspraken nakomt. Constant goed werk geleverd.",
+            "name": "Maria",
+            "loc": "Particulier",
+            "initials": "M",
+            "rating": 5
         }
     ],
     "faq": [
@@ -324,6 +451,14 @@
         {
             "q": "Krijg ik korting bij meerdere panden?",
             "a": "Ja. Bij behandeling van 3 of meer panden tegelijk geven wij 20% korting op het totaal. Vraag naar de mogelijkheden."
+        },
+        {
+            "q": "Moet ik thuis zijn tijdens de behandeling?",
+            "a": "Niet per se. We hebben alleen toegang nodig tot de buitenkant van het pand — dus een poort die open kan of een achteringang. Het hele proces duurt gemiddeld 30 minuten."
+        },
+        {
+            "q": "Mijn pand is recent geverfd — kan jullie middel daar tegen?",
+            "a": "We adviseren minimaal 6 weken te wachten na het schilderen voordat we de behandeling uitvoeren. Zo kan de verf volledig uitharden en hecht ons middel optimaal."
         }
     ],
     "about": {
@@ -362,13 +497,40 @@
         "hero_title": "Specialist in",
         "story_eyebrow": "Ons verhaal",
         "story_heading": "Opgericht uit ergernis met halve oplossingen.",
-        "portrait_label_1": "Team aan het werk",
-        "portrait_label_2": "Behandelde gevel",
-        "portrait_image_1": "",
-        "portrait_image_2": "",
+        "portrait_label_1": "Onze gevelreiniging in actie",
+        "portrait_label_2": "Behandelde gevel — eindresultaat",
+        "portrait_image_1": "/assets/photos/sg-process.webp",
+        "portrait_image_2": "/assets/photos/sg-bestrijding.webp",
         "map": {
-            "active_provinces": ["NL-DR","NL-FL","NL-FR","NL-GE","NL-GR","NL-LI","NL-NB","NL-NH","NL-OV","NL-UT","NL-ZE","NL-ZH"],
-            "active_cities": ["leeuwarden","groningen","zwolle","amsterdam","apeldoorn","utrecht","den-haag","arnhem","rotterdam","nijmegen","tilburg","eindhoven","maastricht"],
+            "active_provinces": [
+                "NL-DR",
+                "NL-FL",
+                "NL-FR",
+                "NL-GE",
+                "NL-GR",
+                "NL-LI",
+                "NL-NB",
+                "NL-NH",
+                "NL-OV",
+                "NL-UT",
+                "NL-ZE",
+                "NL-ZH"
+            ],
+            "active_cities": [
+                "leeuwarden",
+                "groningen",
+                "zwolle",
+                "amsterdam",
+                "apeldoorn",
+                "utrecht",
+                "den-haag",
+                "arnhem",
+                "rotterdam",
+                "nijmegen",
+                "tilburg",
+                "eindhoven",
+                "maastricht"
+            ],
             "hq_city": "nijmegen",
             "show_lines": true
         },

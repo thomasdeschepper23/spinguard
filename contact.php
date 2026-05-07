@@ -48,7 +48,8 @@ if (isset($_GET['sent']) && $_GET['sent'] === '1') {
 require __DIR__ . '/inc/header.php';
 ?>
 <main>
-  <section class="subpage-hero">
+  <section class="subpage-hero has-photo">
+    <div class="hero-photo" style="background-image: url('<?= e(b('/assets/photos/sg-bestrijding.webp')) ?>');"></div>
     <div class="container">
       <span class="eyebrow on-dark">Contact</span>
       <h1>Vraag uw vrijblijvende <em>offerte aan.</em></h1>

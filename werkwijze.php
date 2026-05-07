@@ -44,7 +44,8 @@ function wsec($key, $field, $default = '') { global $sections; return $sections[
 require __DIR__ . '/inc/header.php';
 ?>
 <main>
-  <section class="subpage-hero">
+  <section class="subpage-hero has-photo">
+    <div class="hero-photo" style="background-image: url('<?= e(b('/assets/photos/sg-process.webp')) ?>');"></div>
     <div class="container">
       <span class="eyebrow on-dark"><?= e(wsec('werkwijze_hero','eyebrow','Werkwijze')) ?></span>
       <h1><?= e(wsec('werkwijze_hero','heading','Zo werken wij bij SpinGuard.')) ?></h1>

@@ -34,7 +34,8 @@ $page_desc = $about['intro'] ?? 'Maak kennis met SpinGuard.';
 require __DIR__ . '/inc/header.php';
 ?>
 <main>
-  <section class="subpage-hero">
+  <section class="subpage-hero has-photo">
+    <div class="hero-photo" style="background-image: url('<?= e(b('/assets/photos/sg-hero-woning.webp')) ?>');"></div>
     <div class="container">
       <span class="eyebrow on-dark"><?= e($about['hero_eyebrow'] ?? 'Over ons') ?></span>
       <h1><?= e($about['hero_title'] ?? 'Specialist in') ?> <em><?= e($about['hero_emphasis'] ?? 'spinvrij wonen.') ?></em></h1>
