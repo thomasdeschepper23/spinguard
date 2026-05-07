@@ -1109,6 +1109,57 @@ pre.log {
 }
 .lead-actions { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
 
+/* === Foto-thumbnails bij een lead === */
+.lead-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+  max-width: 540px;
+}
+.lead-photo {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  cursor: zoom-in;
+}
+.lead-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.lead-photo::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,.45));
+  opacity: 0;
+  transition: opacity .15s ease;
+  pointer-events: none;
+}
+.lead-photo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, .12);
+  border-color: var(--violet-300, #c8b8ec);
+}
+.lead-photo:hover::after { opacity: 1; }
+.lead-photo:hover::before {
+  content: '🔍 Bekijken';
+  position: absolute;
+  bottom: 6px; left: 6px; right: 6px;
+  color: white;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-align: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* ============================================
    COLOR PICKER (theme editor)
    ============================================ */

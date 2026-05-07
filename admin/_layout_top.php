@@ -18,7 +18,7 @@ if (function_exists('admin_is_logged_in') && admin_is_logged_in()) {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SpinGuard Admin</title>
-  <link rel="stylesheet" href="<?= htmlspecialchars($BASE) ?>/admin/css/admin.css?v=7" />
+  <link rel="stylesheet" href="<?= htmlspecialchars($BASE) ?>/admin/css/admin.css?v=8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <script>window.SPINGUARD_BASE = <?= json_encode($BASE) ?>;</script>

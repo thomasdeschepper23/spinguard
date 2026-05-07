@@ -1102,17 +1102,6 @@ body.menu-open .announcement-bar { display: none; }
   font-size: 14px; line-height: 1;
 }
 .photo-preview button:hover { background: #c44a1f; }
-.lead-photos {
-  display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;
-}
-.lead-photo {
-  width: 64px; height: 64px;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid var(--line, #e5e5e5);
-  display: block;
-}
-.lead-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .form-success {
   background: linear-gradient(135deg, #e0f7e9, #c8eed9);
