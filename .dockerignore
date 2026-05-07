@@ -1,0 +1,27 @@
+# Bestanden die NIET in de Docker-image moeten
+.git
+.gitignore
+.dockerignore
+*.log
+*.bak
+*.tmp
+HANDLEIDING.pdf
+
+# Lokale dev-data (start vers in productie)
+uploads/leads/*
+!uploads/leads/.gitkeep
+content/leads/leads.json
+content/leads/*.txt
+content/backups/*
+
+# IDE / OS
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Lokale test-bestanden
+_test*.jpg
+_php_server.log
+start-lokaal.bat

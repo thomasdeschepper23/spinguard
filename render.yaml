@@ -1,0 +1,11 @@
+# Render Blueprint — definieert de deploy automatisch
+# Zie https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: spinguard
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true

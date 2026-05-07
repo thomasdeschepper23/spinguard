@@ -1,0 +1,8 @@
+# Admin directory — bescherm config en interne files
+<FilesMatch "^(config|_layout_top|_layout_bottom)\.php$">
+  Require all denied
+</FilesMatch>
+
+# Default index
+DirectoryIndex index.php
+Options -Indexes

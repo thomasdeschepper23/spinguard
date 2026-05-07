@@ -1,0 +1,8 @@
+# Bescherm content directory — geen directe toegang
+Require all denied
+
+# Backup voor oudere Apache (2.2)
+<IfModule !mod_authz_core.c>
+  Order deny,allow
+  Deny from all
+</IfModule>

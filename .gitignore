@@ -1,0 +1,25 @@
+# Lokale data — niet committen
+uploads/leads/*
+!uploads/leads/.gitkeep
+content/leads/leads.json
+content/leads/*.txt
+content/backups/*
+
+# Logs / tmp
+*.log
+*.bak
+*.tmp
+_test*.jpg
+_php_server.log
+
+# IDE / OS
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PHP
+vendor/
+composer.lock

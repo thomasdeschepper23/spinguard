@@ -1,0 +1,590 @@
+{
+    "_comment": "Dit is het hart van de site. Alle teksten, prijzen, FAQ etc. staan hier. Je kunt dit bestand handmatig aanpassen, OF gebruik het admin paneel op /admin/",
+    "site": {
+        "brand": "SpinGuard",
+        "tagline": "De standaard in spinvrij wonen",
+        "phone": "024 234 0061",
+        "phone_href": "tel:+31242340061",
+        "whatsapp_number": "31242340061",
+        "whatsapp_message": "Hallo SpinGuard, ik wil graag een vrijblijvende offerte aanvragen.",
+        "email": "info@spinguard.nl",
+        "address": "Nederland",
+        "domain": "spinguard.nl",
+        "kvk": "99619555",
+        "btw": "NL869064034B01",
+        "service_area": "Heel Nederland",
+        "instagram": "https://www.instagram.com/spinguard.nl/",
+        "tiktok": "https://www.tiktok.com/@spinguard.nl",
+        "facebook": "https://www.facebook.com/spinguard.nl",
+        "_email_target": "info@spinguard.nl",
+        "_email_target_comment": "E-mailadres waar contactformulier-aanvragen naartoe gaan"
+    },
+    "hero": {
+        "eyebrow": "Professionele spinnenbestrijding",
+        "title_line1": "Bescherm uw woning",
+        "title_line2_emphasis": "tegen spinnen.",
+        "subtitle": "SpinGuard verzorgt professionele, duurzame spinnenbestrijding voor woningen en bedrijfspanden in heel Nederland. Zes maanden garantie, biologisch afbreekbare middelen, vrijblijvende offerte vanaf €70.",
+        "cta_primary": "Offerte aanvragen",
+        "cta_secondary": "Onze werkwijze",
+        "trust_items": [
+            "6 maanden garantie",
+            "Reactie binnen 24 uur",
+            "Biologisch afbreekbaar"
+        ]
+    },
+    "trust_strip": [
+        {
+            "num": "100%",
+            "label": "Tevredenheidsgarantie"
+        },
+        {
+            "num": "24u",
+            "label": "Reactietijd offerte"
+        },
+        {
+            "num": "12 mnd",
+            "label": "Langdurige bescherming"
+        },
+        {
+            "num": "5★",
+            "label": "Klantbeoordeling"
+        }
+    ],
+    "prices": [
+        {
+            "id": "appartement",
+            "icon": "Building",
+            "name": "Appartement",
+            "meta": "Tot 100 m² · balkon & gevel",
+            "price": 70,
+            "price_label": null,
+            "featured": false,
+            "features": [
+                "Balkon, ramen en kozijnen",
+                "Inclusief inspectie",
+                "6 maanden garantie"
+            ]
+        },
+        {
+            "id": "rijtjeshuis",
+            "icon": "Houses",
+            "name": "Rijtjeshuis",
+            "meta": "Voor- en achtergevel",
+            "price": 100,
+            "price_label": null,
+            "featured": true,
+            "features": [
+                "Volledige gevel & kozijnen",
+                "Schuur en tuinhuis inbegrepen",
+                "Inclusief inspectie",
+                "6 maanden garantie"
+            ]
+        },
+        {
+            "id": "2-onder-1",
+            "icon": "HouseDouble",
+            "name": "2-onder-1-kap",
+            "meta": "Inclusief zijgevel",
+            "price": 120,
+            "price_label": null,
+            "featured": false,
+            "features": [
+                "Gevel rondom",
+                "Schuur & buitenruimte",
+                "Inclusief inspectie"
+            ]
+        },
+        {
+            "id": "vrijstaand",
+            "icon": "HouseStand",
+            "name": "Vrijstaande woning",
+            "meta": "Maatwerk · alle gevels",
+            "price": null,
+            "price_label": "Op aanvraag",
+            "featured": false,
+            "features": [
+                "Offerte op maat",
+                "Inspectie ter plekke",
+                "Vrijblijvend"
+            ]
+        },
+        {
+            "id": "bedrijf",
+            "icon": "Building",
+            "name": "Bedrijfspand",
+            "meta": "Kantoor · magazijn · garage",
+            "price": null,
+            "price_label": "Op aanvraag",
+            "featured": false,
+            "features": [
+                "Periodieke contracten mogelijk",
+                "Buiten werktijden in te plannen",
+                "Volledige rapportage"
+            ]
+        }
+    ],
+    "discount_note": "20% korting bij behandeling van 3 of meer panden tegelijk.",
+    "sections": {
+        "_comment": "Section-koppen / intros / CTA's per pagina. Allemaal editable via admin → tab 'Pagina-teksten'.",
+        "home_prices":         { "eyebrow": "Tarieven",            "heading": "Heldere prijzen per type pand.",                "intro": "Vaste prijzen vanaf €70 — geen verrassingen, alles inbegrepen." },
+        "home_process":        { "eyebrow": "Werkwijze",           "heading": "Onze aanpak in 5 stappen.",                     "intro": "Van eerste WhatsApp tot 6 maanden garantie — zo werken wij." },
+        "home_ba":             { "eyebrow": "Het verschil",        "heading": "Het verschil van één behandeling.",             "intro": "Schuif over de afbeelding om het verschil te zien — vóór en na onze behandeling." },
+        "home_benefits":       { "eyebrow": "Waarom SpinGuard",    "heading": "De standaard in spinvrij wonen.",               "intro": "Vier redenen waarom particulieren en bedrijven voor SpinGuard kiezen." },
+        "home_faq":            { "eyebrow": "Veelgestelde vragen", "heading": "Antwoorden op uw vragen.",                       "intro": "Niet gevonden wat u zoekt? Stuur ons een bericht via WhatsApp." },
+
+        "diensten_hero":       { "eyebrow": "Diensten & tarieven", "heading": "Heldere prijzen voor elk type pand.",           "intro": "Vaste prijzen vanaf €70, inclusief inspectie en zes maanden garantie. Vraag vrijblijvend een offerte aan." },
+        "diensten_benefits":   { "eyebrow": "Inbegrepen",          "heading": "Wat krijgt u voor uw geld?",                    "intro": "Bij elke behandeling — ongeacht het type pand — krijgt u dezelfde grondige aanpak." },
+
+        "werkwijze_hero":      { "eyebrow": "Werkwijze",           "heading": "Zo werken wij bij SpinGuard.",                  "intro": "Van eerste contact tot zes maanden garantie. Onze aanpak is helder, transparant en doelgericht." },
+        "werkwijze_timeline":  { "eyebrow": "Op de dag zelf",      "heading": "Wat te verwachten?",                            "intro": "Een typische behandelingsdag duurt ongeveer 1-2 uur voor een gemiddelde woning." },
+        "werkwijze_ba":        { "eyebrow": "Het verschil",        "heading": "Het verschil van één behandeling.",             "intro": "Schuif over de afbeelding om het verschil te zien — vóór en na onze behandeling." },
+
+        "contact_faq":         { "eyebrow": "Veelgestelde vragen", "heading": "Antwoorden op uw vragen.",                       "intro": "Niet gevonden wat u zoekt? Stuur ons een bericht via WhatsApp." }
+    },
+    "ctas": {
+        "_comment": "CTA-banner onderaan elke pagina. title + text.",
+        "diensten":  { "title": "Klaar voor een spinvrije woning?", "text": "Stuur ons een paar foto's van uw pand via WhatsApp. Binnen 24 uur ontvangt u een vrijblijvende offerte op maat." },
+        "werkwijze": { "title": "Klaar om te starten?",            "text": "Stuur ons enkele foto's via WhatsApp. Binnen 24 uur ontvangt u een vrijblijvende offerte op maat." }
+    },
+    "timeline": {
+        "_comment": "Timeline-items op werkwijze-pagina (Op de dag zelf).",
+        "items": [
+            { "time": "0:00", "title": "Aankomst & inspectie",           "text": "Wij arriveren met onze toolkit, lopen het pand rond en bespreken de aanpak met u." },
+            { "time": "0:15", "title": "Webben & nesten verwijderen",   "text": "Eerst alle bestaande webben en nesten weghalen — gevels, kozijnen, schuur, hoeken." },
+            { "time": "0:45", "title": "Behandeling kritieke plekken",   "text": "Gerichte behandeling met biologisch afbreekbare middelen op alle hot-spots." },
+            { "time": "1:15", "title": "Eindcontrole",                   "text": "Wij controleren of niets gemist is en doen een laatste rondje. Foto's voor in onze rapportage." },
+            { "time": "1:30", "title": "Afronding & uitleg",             "text": "Korte uitleg wat u kunt verwachten, garantie-info en u krijgt onze contactgegevens voor eventuele vragen." }
+        ]
+    },
+    "compare": {
+        "_comment": "Vergelijkingstabel onderaan de Diensten-pagina (DIY vs SpinGuard)",
+        "enabled": true,
+        "eyebrow": "Vergelijking",
+        "heading": "SpinGuard versus zelf doen.",
+        "intro": "Een grondige professionele behandeling werkt maandenlang door — zelfs goedkope DIY-middelen halen die diepte niet.",
+        "col_them": "DIY / supermarkt",
+        "col_us": "SpinGuard",
+        "rows": [
+            { "label": "Verwijdering van webben & nesten",           "them": "no",   "us": "yes" },
+            { "label": "Behandeling op moeilijk bereikbare plekken", "them": "no",   "us": "yes" },
+            { "label": "Biologisch afbreekbare middelen",            "them": "soms", "us": "yes" },
+            { "label": "Werkzaam tot 6 maanden",                     "them": "no",   "us": "yes" },
+            { "label": "Garantie bij hernieuwde overlast",           "them": "no",   "us": "yes" },
+            { "label": "Inspectie ter plekke",                       "them": "no",   "us": "yes" }
+        ]
+    },
+    "reviews_settings": {
+        "_comment": "Weergave-stijl van de reviews-sectie. Mogelijke layouts: grid | compact | slider | list | trustpilot",
+        "layout": "grid",
+        "eyebrow": "Klantervaringen",
+        "heading": "Vertrouwd door huishoudens en bedrijven.",
+        "subtitle": "Een greep uit ervaringen van klanten — van rijtjeswoning tot parkeergarage.",
+        "trustpilot_enabled": false,
+        "trustpilot_embed": ""
+    },
+    "process": [
+        {
+            "icon": "Camera",
+            "title": "Aanvraag & inspectie",
+            "short": "Stuur foto's via WhatsApp; wij beoordelen de situatie.",
+            "long": "Stuur ons enkele foto's van de plekken waar u last heeft van spinnen — gevels, kozijnen, hoeken, schuur of bedrijfspand. Op basis daarvan beoordelen wij de situatie en plannen we waar nodig een inspectie ter plaatse.",
+            "details": [
+                "WhatsApp of e-mail",
+                "Reactie binnen 24 uur",
+                "Vrijblijvend"
+            ]
+        },
+        {
+            "icon": "Doc",
+            "title": "Vrijblijvende offerte",
+            "short": "Heldere offerte op maat, geen kleine lettertjes.",
+            "long": "Op basis van de inspectie maken we een duidelijke, vrijblijvende offerte op maat. Transparant geprijsd, snel geleverd en zonder verrassingen achteraf.",
+            "details": [
+                "Vaste totaalprijs",
+                "Inclusief BTW",
+                "Binnen 24 uur"
+            ]
+        },
+        {
+            "icon": "Spray",
+            "title": "Professionele behandeling",
+            "short": "Wij verwijderen webben en behandelen alle kritieke plekken.",
+            "long": "Na akkoord plannen wij een afspraak in. Wij verwijderen webben en nesten en behandelen alle kritieke plekken — gevels, kozijnen en dakgoten — grondig en professioneel met biologisch afbreekbare middelen.",
+            "details": [
+                "Veilige producten",
+                "Mens- en diervriendelijk",
+                "Minimale overlast"
+            ]
+        },
+        {
+            "icon": "Sparkle",
+            "title": "Direct zichtbaar resultaat",
+            "short": "Uw woning of pand ziet er direct weer schoon en verzorgd uit.",
+            "long": "Direct na de behandeling is het verschil zichtbaar: webben weg, gevels schoon, ramen helder. Uw woning of bedrijfspand straalt weer.",
+            "details": [
+                "Zichtbaar verschil na één behandeling",
+                "Schone uitstraling",
+                "Sneller resultaat dan alternatieven"
+            ]
+        },
+        {
+            "icon": "Shield",
+            "title": "Langdurige bescherming",
+            "short": "Tot zes maanden bescherming — gegarandeerd.",
+            "long": "Onze behandeling werkt maandenlang door en helpt nieuwe spinnenoverlast te voorkomen. We staan achter ons werk: bij hernieuwde overlast binnen de garantieperiode komen we kosteloos terug.",
+            "details": [
+                "6 maanden garantie",
+                "Preventief effect",
+                "Jaarlijkse herhaling aanbevolen"
+            ]
+        }
+    ],
+    "benefits": [
+        {
+            "id": "b1",
+            "icon": "Spider",
+            "title": "100% spinvrij resultaat",
+            "text": "Direct zichtbaar verschil na één behandeling — met 6 maanden garantie."
+        },
+        {
+            "id": "b2",
+            "icon": "Home",
+            "title": "Voor woning én bedrijf",
+            "text": "Van appartement tot bedrijfspand. Wij behandelen elk type pand."
+        },
+        {
+            "id": "b3",
+            "icon": "Clock",
+            "title": "Snel & efficiënt",
+            "text": "Een gemiddelde woning behandelen we in één tot twee uur, zonder overlast."
+        },
+        {
+            "id": "b4",
+            "icon": "Leaf",
+            "title": "Veilig & duurzaam",
+            "text": "Wij werken met biologisch afbreekbare middelen — veilig voor mens en huisdier."
+        }
+    ],
+    "before_after": {
+        "title": "Direct zichtbaar resultaat.",
+        "subtitle": "Schuif over de afbeelding om het verschil te zien — vóór en na onze behandeling.",
+        "before_image": "",
+        "after_image": "",
+        "bullets": [
+            "Webben en nesten compleet verwijderd",
+            "Schone gevel, kozijnen en hoeken",
+            "Tot 6 maanden bescherming"
+        ]
+    },
+    "testimonials": [
+        {
+            "quote": "Vanaf de eerste foto tot het eindresultaat alles netjes geregeld. Geen spinnen meer rond ons huis.",
+            "name": "Familie Jansen",
+            "loc": "Rijtjeshuis · Nijmegen",
+            "initials": "FJ"
+        },
+        {
+            "quote": "Snel, vriendelijk en professioneel. Onze parkeergarage is weer toonbaar — klanten reageren positief.",
+            "name": "ADA Groep",
+            "loc": "Bedrijfspand · Arnhem",
+            "initials": "AG"
+        },
+        {
+            "quote": "Eerlijke prijs, schone aanpak. We laten het nu jaarlijks doen. Scheelt veel ergernis.",
+            "name": "Marieke V.",
+            "loc": "Vrijstaande woning · Beuningen",
+            "initials": "MV"
+        }
+    ],
+    "faq": [
+        {
+            "q": "Hoe lang werkt de behandeling?",
+            "a": "Onze behandeling biedt zes maanden bescherming, gedekt door onze garantie. Voor optimale resultaten adviseren wij een jaarlijkse herhaling."
+        },
+        {
+            "q": "Is de behandeling veilig voor kinderen en huisdieren?",
+            "a": "Ja. Wij werken uitsluitend met biologisch afbreekbare middelen die — eenmaal opgedroogd — volledig veilig zijn voor mens, huisdier en planten."
+        },
+        {
+            "q": "Wat als er na de behandeling toch spinnen terugkomen?",
+            "a": "Mocht u binnen de garantieperiode van zes maanden opnieuw overlast ervaren, dan komen wij kosteloos terug om bij te behandelen."
+        },
+        {
+            "q": "Hoeveel tijd kost een behandeling?",
+            "a": "Een appartement of rijtjeswoning behandelen we doorgaans in één tot twee uur. Voor grotere panden plannen we ruimer in."
+        },
+        {
+            "q": "In welke regio's werken jullie?",
+            "a": "Wij bedienen heel Nederland. Stuur ons een bericht via WhatsApp om uw locatie te bevestigen en een afspraak in te plannen."
+        },
+        {
+            "q": "Hoe vraag ik een offerte aan?",
+            "a": "Het makkelijkst is via WhatsApp: stuur enkele foto's van de probleemplekken en wij sturen binnen 24 uur een vrijblijvende offerte op maat."
+        },
+        {
+            "q": "Krijg ik korting bij meerdere panden?",
+            "a": "Ja. Bij behandeling van 3 of meer panden tegelijk geven wij 20% korting op het totaal. Vraag naar de mogelijkheden."
+        }
+    ],
+    "about": {
+        "title": "Over SpinGuard",
+        "intro": "Bij SpinGuard helpen wij particulieren en bedrijven met het volledig aanpakken van spinnenoverlast — van bestrijding tot langdurige preventie. Onze missie is simpel: uw woning of bedrijfspand spinvrij, met een aanpak die veilig is voor mens, dier en milieu.",
+        "story": [
+            "SpinGuard is opgericht in Nijmegen en bedient inmiddels heel Nederland. Wij zijn jong, professioneel en gespecialiseerd in één ding: spinnen écht weghouden.",
+            "Wij geloven dat spinnenbestrijding niet draait om eenmalig spuiten, maar om een grondige aanpak. Daarom verwijderen wij eerst alle webben en nesten, behandelen we kritieke plekken met biologisch afbreekbare middelen, en geven we zes maanden garantie op het resultaat.",
+            "Of het nu om een appartement, rijtjeshuis, vrijstaande woning of bedrijfspand gaat — wij komen, inspecteren, behandelen en garanderen."
+        ],
+        "values": [
+            {
+                "icon": "Shield",
+                "title": "Betrouwbaar",
+                "text": "Vaste prijzen, heldere afspraken, garantie op werk."
+            },
+            {
+                "icon": "Leaf",
+                "title": "Duurzaam",
+                "text": "Biologisch afbreekbare middelen, veilig voor mens en dier."
+            },
+            {
+                "icon": "Clock",
+                "title": "Snel",
+                "text": "Reactie binnen 24 uur, behandeling vaak binnen een week."
+            },
+            {
+                "icon": "Sparkle",
+                "title": "Zichtbaar",
+                "text": "Direct na behandeling is het verschil duidelijk te zien."
+            }
+        ],
+        "founded_year": "2024",
+        "hero_emphasis": "spinvrij wonen.",
+        "hero_eyebrow": "Over ons",
+        "hero_title": "Specialist in",
+        "story_eyebrow": "Ons verhaal",
+        "story_heading": "Opgericht uit ergernis met halve oplossingen.",
+        "portrait_label_1": "Team aan het werk",
+        "portrait_label_2": "Behandelde gevel",
+        "portrait_image_1": "",
+        "portrait_image_2": "",
+        "map": {
+            "active_provinces": ["NL-DR","NL-FL","NL-FR","NL-GE","NL-GR","NL-LI","NL-NB","NL-NH","NL-OV","NL-UT","NL-ZE","NL-ZH"],
+            "active_cities": ["leeuwarden","groningen","zwolle","amsterdam","apeldoorn","utrecht","den-haag","arnhem","rotterdam","nijmegen","tilburg","eindhoven","maastricht"],
+            "hq_city": "nijmegen",
+            "show_lines": true
+        },
+        "founded_label": "Sinds",
+        "area_eyebrow": "Werkgebied",
+        "area_heading": "Heel Nederland — vanuit Nijmegen.",
+        "area_text": "Onze thuisbasis is Nijmegen, maar wij rijden door heel Nederland. Voor afspraken op afstand vragen wij alleen een kleine reisvergoeding bij behandelingen onder €100.",
+        "cta_title": "Klaar om kennis te maken?",
+        "cta_text": "Stuur ons een bericht via WhatsApp of bel ons direct. Wij helpen u graag verder.",
+        "values_eyebrow": "Onze waarden",
+        "values_heading": "Waar wij voor staan.",
+        "values_subtitle": "Vier kernwaarden die alles wat wij doen sturen."
+    },
+    "contact": {
+        "title": "Vraag uw vrijblijvende offerte aan.",
+        "subtitle": "Stuur enkele foto's via WhatsApp of vul het formulier in. Wij reageren binnen 24 uur.",
+        "form_intro": "De snelste route naar een offerte is via WhatsApp. Stuur ons enkele foto's van uw pand en wij reageren binnen 24 uur."
+    },
+    "homepage_extras": {
+        "_comment": "Extra secties op de homepage die je aan/uit kunt zetten",
+        "trust_badges_enabled": true,
+        "trust_badges_items": [
+            {
+                "title": "KvK geregistreerd",
+                "subtitle": "99619555",
+                "icon": "Shield"
+            },
+            {
+                "title": "BTW-plichtig",
+                "subtitle": "NL869064034B01",
+                "icon": "Doc"
+            },
+            {
+                "title": "6 maanden garantie",
+                "subtitle": "Op alle behandelingen",
+                "icon": "Check"
+            },
+            {
+                "title": "Biologisch afbreekbaar",
+                "subtitle": "Veilig voor mens & dier",
+                "icon": "Leaf"
+            }
+        ],
+        "calculator_enabled": true,
+        "sticky_mobile_bar": true
+    },
+    "gallery": {
+        "_comment": "Foto-galerij. Voeg projecten toe via admin.",
+        "title": "Onze laatste projecten",
+        "subtitle": "Een selectie van recent uitgevoerde behandelingen.",
+        "categories": [
+            "Woningen",
+            "Bedrijven",
+            "Before/After"
+        ],
+        "items": []
+    },
+    "service_area_page": {
+        "title": "Werkgebied — Heel Nederland",
+        "intro": "SpinGuard bedient klanten in heel Nederland. Wij werken zowel voor particulieren als voor bedrijven. Geen reiskosten binnen ons werkgebied.",
+        "extra_info": "Staat jouw stad of dorp er niet bij? Geen probleem — wij komen overal in Nederland. Stuur ons een bericht via WhatsApp of vul het contactformulier in."
+    },
+    "custom_pages": {
+        "_comment": "Eigen pagina's gemaakt via admin. URL: /custom.php?p=key",
+        "items": []
+    },
+    "legal": {
+        "privacy_title": "Privacyverklaring",
+        "privacy_content": "## Wie zijn wij?\r\n\r\nSpinGuard, gevestigd in Nijmegen (KvK 99619555), is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.\r\n\r\n## Welke gegevens verwerken wij?\r\n\r\nWij verwerken de volgende persoonsgegevens van u:\r\n\r\n- Naam\r\n- Telefoonnummer\r\n- E-mailadres (optioneel)\r\n- Postcode + adres (voor planning)\r\n- IP-adres (technisch, anti-spam)\r\n- Inhoud van uw bericht\r\n\r\n## Met welk doel?\r\n\r\nWij gebruiken deze gegevens uitsluitend om:\r\n\r\n- Contact met u op te nemen over uw aanvraag\r\n- Een offerte op maat te kunnen maken\r\n- Een afspraak te plannen\r\n- Onze dienstverlening te verbeteren\r\n\r\n## Hoe lang bewaren wij gegevens?\r\n\r\nAanvragen worden maximaal **2 jaar** bewaard, daarna automatisch verwijderd.\r\n\r\n## Cookies\r\n\r\nWij gebruiken alleen functionele en (met uw toestemming) analyse-/marketing-cookies. Zie het cookie-banner op onze site.\r\n\r\n## Uw rechten\r\n\r\nU heeft recht op inzage, correctie en verwijdering van uw gegevens. Mail naar info@spinguard.nl.\r\n\r\n## Klachten\r\n\r\nHeeft u een klacht over de verwerking van uw gegevens? Neem contact op met de Autoriteit Persoonsgegevens via autoriteitpersoonsgegevens.nl.",
+        "voorwaarden_title": "Algemene voorwaarden",
+        "voorwaarden_content": "## 1. Toepasselijkheid\r\n\r\nDeze algemene voorwaarden zijn van toepassing op alle diensten van SpinGuard (KvK 99619555).\r\n\r\n## 2. Offerte\r\n\r\nElke offerte is vrijblijvend en geldt 30 dagen.\r\n\r\n## 3. Tarieven\r\n\r\nGenoemde prijzen zijn inclusief BTW, exclusief eventuele meerwerken na inspectie.\r\n\r\n## 4. Betaling\r\n\r\nBetaling per pin, contant of overschrijving binnen 14 dagen na factuurdatum.\r\n\r\n## 5. Garantie\r\n\r\nWij geven 6 maanden garantie op onze behandelingen. Bij hernieuwde overlast komen wij kosteloos terug.\r\n\r\n## 6. Aansprakelijkheid\r\n\r\nSpinGuard is niet aansprakelijk voor indirecte schade. Onze aansprakelijkheid is beperkt tot het factuurbedrag.\r\n\r\n## 7. Annulering\r\n\r\nAfspraken kunnen tot 24u van tevoren kosteloos worden verzet of geannuleerd.\r\n\r\n## 8. Geschillen\r\n\r\nOp deze voorwaarden is Nederlands recht van toepassing."
+    },
+    "appearance": {
+        "_comment": "Vormgeving: kleuren, logo, custom CSS",
+        "logo": "/assets/spinguard-logo.png",
+        "primary_color": "#382d72",
+        "primary_color_dark": "#2a2059",
+        "primary_color_light": "#9d92c4",
+        "accent_color": "#d6c1f5",
+        "ink_color": "#0d1224",
+        "custom_css": ""
+    },
+    "navigation": {
+        "_comment": "Items in het hoofdmenu. Reorder/verwijder items.",
+        "items": [
+            {
+                "label": "Home",
+                "url": "/",
+                "key": "home"
+            },
+            {
+                "label": "Diensten",
+                "url": "/diensten.php",
+                "key": "diensten"
+            },
+            {
+                "label": "Werkwijze",
+                "url": "/werkwijze.php",
+                "key": "werkwijze"
+            },
+            {
+                "label": "Over ons",
+                "url": "/over-ons.php",
+                "key": "over"
+            },
+            {
+                "label": "Contact",
+                "url": "/contact.php",
+                "key": "contact"
+            }
+        ]
+    },
+    "footer": {
+        "tagline": "Professionele spinnenbestrijding voor woningen en bedrijfspanden in heel Nederland. Duurzaam, veilig en met zes maanden garantie.",
+        "extra_text": "",
+        "copyright_text": ""
+    },
+    "announcement": {
+        "enabled": false,
+        "text": "Zomeractie: 20% korting bij behandeling van 3+ panden!",
+        "link_text": "Vraag offerte aan",
+        "link_url": "/contact.php",
+        "background": "#382d72",
+        "text_color": "#ffffff"
+    },
+    "maintenance": {
+        "enabled": false,
+        "title": "We zijn even bezig",
+        "message": "Onze website wordt momenteel bijgewerkt. We zijn binnenkort weer terug. Bel of WhatsApp ons direct via 024 234 0061 voor vragen.",
+        "allow_admin_ip": true
+    },
+    "lead_settings": {
+        "_comment": "Hoe leads worden afgehandeld",
+        "extra_recipients": "",
+        "_extra_comment": "Komma-gescheiden e-mailadressen die ook een kopie krijgen",
+        "auto_reply_enabled": true,
+        "auto_reply_subject": "Bedankt voor uw aanvraag — SpinGuard",
+        "auto_reply_message": "Beste {naam},\r\n\r\nBedankt voor uw aanvraag bij SpinGuard. Wij hebben uw bericht goed ontvangen en nemen binnen 24 uur contact met u op.\r\n\r\nVoor snel contact kunt u ons WhatsApp-bericht sturen op 024 234 0061.\r\n\r\nMet vriendelijke groet,\r\nHet SpinGuard team\r\n\r\n---\r\nSpinGuard\r\nspinguard.nl",
+        "webhook_url": "",
+        "_webhook_comment": "Optioneel: POST URL die bij elke lead wordt aangeroepen (voor Slack/Discord/Make.com)"
+    },
+    "cookie_banner": {
+        "title": "Cookies & privacy",
+        "message": "Wij gebruiken essentiële cookies voor de werking van de site. Met uw toestemming gebruiken wij ook analyse- en marketing-cookies om de site te verbeteren en u relevante advertenties te tonen.",
+        "accept_label": "Akkoord met alle",
+        "decline_label": "Alleen noodzakelijk"
+    },
+    "tracking": {
+        "_comment": "Marketing & analytics IDs. Voeg toe wanneer je advertentiecampagnes start. Tracking laadt alleen na cookie-toestemming.",
+        "gtm_id": "",
+        "ga4_id": "",
+        "meta_pixel_id": "",
+        "google_ads_id": "",
+        "google_ads_conversion_label": "",
+        "linkedin_partner_id": "",
+        "tiktok_pixel_id": "",
+        "custom_head": "",
+        "custom_body_end": "",
+        "cookie_consent_enabled": true
+    },
+    "seo": {
+        "title": "SpinGuard — Spinnenbestrijding heel Nederland | Vrijblijvende offerte vanaf €70",
+        "description": "Professionele spinnenbestrijding voor woningen en bedrijfspanden in heel Nederland. ✓ 6 maanden garantie ✓ Biologisch afbreekbaar ✓ Vanaf €70.",
+        "keywords": "spinnenbestrijding, spinvrij wonen, spinnen weghalen, ongediertebestrijding, Nederland, Nijmegen, biologische bestrijding, gevelreiniging, anti spin behandeling, professioneel",
+        "site_url": "https://spinguard.nl",
+        "default_og_image": "/assets/spinguard-logo.png",
+        "rating_value": "5.0",
+        "rating_count": 24,
+        "geo_latitude": "51.8425625",
+        "geo_longitude": "5.8528014",
+        "geo_city": "Nijmegen",
+        "geo_region": "Gelderland",
+        "geo_postcode": "6500",
+        "opening_hours": "Mo-Fr 08:00-18:00, Sa 09:00-16:00",
+        "price_range": "€€",
+        "service_cities": [
+            "Amsterdam",
+            "Rotterdam",
+            "Den Haag",
+            "Utrecht",
+            "Eindhoven",
+            "Groningen",
+            "Tilburg",
+            "Almere",
+            "Breda",
+            "Nijmegen",
+            "Apeldoorn",
+            "Haarlem",
+            "Arnhem",
+            "Amersfoort",
+            "Den Bosch",
+            "Zwolle",
+            "Leeuwarden",
+            "Maastricht"
+        ],
+        "pages": {
+            "home": {
+                "title": "SpinGuard — Spinnenbestrijding heel Nederland | Vrijblijvende offerte vanaf €70",
+                "description": "Professionele spinnenbestrijding voor woningen en bedrijfspanden in heel Nederland. ✓ 6 maanden garantie ✓ Biologisch afbreekbaar ✓ Vanaf €70."
+            },
+            "diensten": {
+                "title": "Diensten & tarieven — SpinGuard | Vanaf €70 incl. 6 mnd garantie",
+                "description": "Heldere prijzen voor spinnenbestrijding: appartement vanaf €70, rijtjeshuis €100, 2-onder-1-kap €120. 6 maanden garantie. Vraag vrijblijvend offerte aan."
+            },
+            "werkwijze": {
+                "title": "Onze werkwijze in 5 stappen — SpinGuard",
+                "description": "Ontdek hoe SpinGuard werkt: van foto-aanvraag via WhatsApp tot grondige behandeling met 6 maanden garantie. Eenvoudig, transparant en effectief."
+            },
+            "over_ons": {
+                "title": "Over SpinGuard — Specialist in spinvrij wonen",
+                "description": "Maak kennis met SpinGuard: jong, professioneel team gespecialiseerd in spinnenbestrijding voor woningen en bedrijven in heel Nederland."
+            },
+            "contact": {
+                "title": "Contact & offerte aanvragen — SpinGuard | Reactie binnen 24 uur",
+                "description": "Vraag een vrijblijvende offerte aan voor spinnenbestrijding. WhatsApp, bel 024 234 0061 of vul het formulier in. Wij reageren binnen 24 uur."
+            }
+        }
+    }
+}

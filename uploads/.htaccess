@@ -1,0 +1,12 @@
+# Uploads — alleen images, geen PHP execution
+<FilesMatch "\.(php|phtml|phar|pl|py|cgi|rb|sh)$">
+  Require all denied
+</FilesMatch>
+
+# Forceer text/html nooit
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+Options -ExecCGI
+RemoveHandler .php .phtml

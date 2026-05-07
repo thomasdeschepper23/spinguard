@@ -1,0 +1,41 @@
+# SpinGuard — robots.txt
+# Toestaan voor zoekmachine-crawlers, blokkeren admin/api
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /content/
+Disallow: /inc/
+Disallow: /*?*sent=
+Disallow: /*?*error=
+Disallow: /*?*saved=
+
+# Bots die we expliciet toelaten
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Voor sociale media previews — toelaten op alles
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# AI crawlers — kun je blokkeren als je wil:
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: CCBot
+# Disallow: /
+
+Sitemap: https://spinguard.nl/sitemap.xml
